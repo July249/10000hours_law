@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1만 시간의 법칙</title>
-    <link rel="stylesheet" href="css/10000hours_2.css" />
+    <link rel="stylesheet" href="css/10000hours.css" />
   </head>
   <body>
     <main id="app">
       <header class="header">
+        <h1 class="screen-out">1만 시간의 법칙</h1>
         <img class="clock" src="./img/clock.png" alt="" />
-        <img class="title" src="./img/title.png" alt="1만 시간의 법칙" />
+        <img
+          class="title"
+          src="./img/title.png"
+          alt="1만 시간의 법칙 메인 이미지"
+        />
       </header>
       <div class="sub-title">
         <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
@@ -47,25 +52,25 @@
             />
             시간씩 훈련할 것이다.
           </p>
+          <div class="btn-wrap">
+            <button class="btn-go btn-calc" type="submit">
+              나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+            </button>
+            <img class="click" src="./img/click.png" alt="" />
+          </div>
         </form>
-        <div class="btn-wrap">
-          <button class="btn-go btn-calc" type="submit">
-            나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-          </button>
-          <img class="click" src="./img/click.png" alt="" />
-        </div>
       </section>
       <section class="result-sec">
         <h2 class="screen-out">결과 확인</h2>
         <div class="result-area">
           <p class="txt-wannabe">
             당신은
-            <strong id="field-output" class="txt-output">프로그래밍</strong>
+            <strong id="field-output" class="txt-output">프론트엔드</strong>
             전문가가 되기 위해서
           </p>
           <p class="txt-time">
             대략
-            <strong id="time-output" class="txt-output">5110</strong>
+            <strong id="time-output" class="txt-output">5510</strong>
             일 이상 훈련하셔야 합니다! :)
           </p>
         </div>
@@ -82,6 +87,22 @@
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </p>
     </footer>
-    <!-- <script src="main.js"></script> -->
+    <!-- Modal Component -->
+    <section id="modal">
+      <h2 class="screen-out">응원 모달</h2>
+      <div class="modal-wrap">
+        <p class="txt-cheer">
+          <strong>화이팅!!♥♥♥</strong><br />
+          당신의 꿈을 응원합니다.
+        </p>
+        <img
+          src="./img/licat.png"
+          alt="응원하는 라이켓 이모지"
+          class="licat-img"
+        />
+        <button class="btn-close">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+      </div>
+    </section>
+    <!-- <script src="10000hours.js"></script> -->
   </body>
 </html>

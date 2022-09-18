@@ -165,10 +165,6 @@ body {
   margin-bottom: 27px;
 }
 
-.txt-time {
-  margin-bottom: 115px;
-}
-
 button {
   display: flex;
   align-items: center;
@@ -186,7 +182,7 @@ button {
 .btn-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 147px;
+  margin: 115px 0 147px;
   position: relative;
 }
 
@@ -210,7 +206,6 @@ button {
 .txt-wannabe,
 .txt-time {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
