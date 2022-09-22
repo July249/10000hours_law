@@ -58,7 +58,6 @@ body {
 
 #app {
   width: 100%;
-  margin: 120px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +77,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 140px auto 0;
 }
 
 .clock {
@@ -106,8 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 14px 102px;
-  height: 85px;
+  margin: 0 60px 102px;
 }
 
 .explain .txt-explain {
@@ -150,6 +149,7 @@ body {
   border-radius: 7px;
   width: 228px;
   height: 57px;
+  margin: 0 17px;
 }
 
 .insert-form input::placeholder {
@@ -196,7 +196,11 @@ button {
 .click {
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 35px;
+}
+
+.result-sec {
+  display: none;
 }
 
 .result-area {
@@ -208,8 +212,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
   margin: 0;
+  line-height: 1;
+}
+
+.txt-output {
+  margin: 0 12px;
+  line-height: 1;
 }
 
 .txt-wannabe {
@@ -230,7 +239,7 @@ button {
   justify-content: center;
 }
 
-.btn-go {
+.btn-yellow {
   background-color: #f5df4d;
 }
 
@@ -264,22 +273,33 @@ button {
 }
 
 /* Modal */
+.modal-screen {
+  /* js control: none -> flex -> none */
+  display: none;
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: 0;
-  margin: 100px auto;
+  margin: 200px auto;
   width: 800px;
   height: 800px;
-  z-index: 999;
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #modal .modal-wrap {
+  margin: 76px auto 68px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,12 +326,17 @@ button {
 #modal .licat-img {
   width: 433px;
   height: 337px;
-  margin-bottom: 20px;
+  margin: 29px auto 74px;
 }
 
 #modal .btn-close {
-  margin: 74px 0 20px;
   font-size: 24px;
   text-align: center;
   background-color: #f5df4d;
+}
+
+@media screen and (max-width: 800px) {
+  .click {
+    display: none;
+  }
 }
