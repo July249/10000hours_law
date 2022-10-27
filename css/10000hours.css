@@ -274,16 +274,22 @@ button {
 
 /* Modal */
 .modal-screen {
+  /* compare visibility with display */
+  visibility: hidden;
   /* js control: none -> flex -> none */
-  display: none;
-  z-index: 999;
-  position: fixed;
+  /* display: none; */
+  z-index: -10;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
 }
 
 #modal {
