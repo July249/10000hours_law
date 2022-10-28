@@ -32,13 +32,13 @@ let timeValidResult;
 // 사용자가 input에 입력사항을 적을 때 정규표현식을 위반하는지 체크하여
 // 위반시 border를 빨간색으로 표시하여 입력사항에 주의를 요할 것을 사용자에게 알림
 fieldInputValue.addEventListener('keyup', () => {
-  fieldValidResult = strRegExp.test(fieldInputValue.value);
+  fieldValidResult = fieldRegExp.test(fieldInputValue.value);
 
   realTimeCheck(fieldInputValue, fieldValidResult);
 });
 
 timeInputValue.addEventListener('keyup', () => {
-  timeValidResult = numRegExp.test(timeInputValue.value);
+  timeValidResult = timeRegExp.test(timeInputValue.value);
 
   realTimeCheck(timeInputValue, timeValidResult);
 });
@@ -55,8 +55,8 @@ function realTimeCheck(inputNode, validResult) {
 function validationAlert(field, time) {
   let validTestResult = false;
 
-  fieldValidResult = strRegExp.test(field);
-  timeValidResult = numRegExp.test(time);
+  fieldValidResult = fieldRegExp.test(field);
+  timeValidResult = timeRegExp.test(time);
 
   if (!fieldValidResult && !timeValidResult) {
     alert('입력 사항을 적어 주세요.');
