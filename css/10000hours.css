@@ -148,10 +148,12 @@ body {
 }
 
 .insert-form input {
+  border: none;
   border-radius: 7px;
   width: 14.25rem;
   height: 3.5625rem;
   margin: 0 1.0625rem;
+  box-sizing: border-box;
 }
 
 .insert-form input::placeholder {
