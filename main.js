@@ -58,18 +58,15 @@ function validationAlert(field, time) {
   fieldValidResult = fieldRegExp.test(field);
   timeValidResult = timeRegExp.test(time);
 
-  if (!fieldValidResult && !timeValidResult) {
+  if (!!field === false && !!time === false) {
     alert('입력 사항을 적어 주세요.');
     realTimeCheck(fieldInputValue, fieldValidResult);
     realTimeCheck(timeInputValue, timeValidResult);
   } else if (!fieldValidResult) {
-    alert('원하시는 전문 분야를 입력하여 주세요');
+    alert('원하시는 전문 분야를 확인하여 주세요.');
     realTimeCheck(fieldInputValue, fieldValidResult);
   } else if (!timeValidResult) {
-    alert('하루에 훈련하실 시간을 입력하여 주세요');
-    realTimeCheck(timeInputValue, timeValidResult);
-  } else if (time > 24 && timeValidResult) {
-    alert('24시간 이내로 작성하여 주세요!');
+    alert('하루에 훈련하실 시간을 확인하여 주세요.');
     realTimeCheck(timeInputValue, timeValidResult);
   } else {
     validTestResult = true;
