@@ -3,7 +3,7 @@
 
 .result-sec {
   @include u.flex_column;
-  // display: none;
+  display: none;
 
   .result-area {
     .txt-wannabe,
@@ -14,8 +14,12 @@
       }
       font-family: var(--Gmarket-medium);
       font-size: g.$p-mobile-medium;
-      line-height: u.rem(14);
+      line-height: 1;
       font-weight: 400;
+
+      @include u.breakpoint-up(medium) {
+        font-size: g.$p-deskTop-medium;
+      }
 
       strong {
         font-family: var(--Gmarket-bold);
@@ -23,6 +27,11 @@
         font-size: g.$p-mobile-xlarge;
         flex-grow: 0;
         margin: 0 u.rem(8);
+
+        @include u.breakpoint-up(medium) {
+          font-size: g.$p-deskTop-xlarge;
+          margin: 0 u.rem(12);
+        }
       }
     }
 
@@ -32,6 +41,10 @@
 
     .txt-time {
       margin-bottom: u.rem(55);
+
+      @include u.breakpoint-up(medium) {
+        margin-bottom: u.rem(127);
+      }
     }
   }
 
@@ -41,9 +54,12 @@
     }
     margin: 0 u.rem(31) u.rem(83);
 
+    @include u.breakpoint-up(medium) {
+      margin: 0 auto u.rem(130);
+    }
+
     .btn-go {
       @include u.button {
-        // width: u.rem(186);
         height: u.rem(40);
         background-color: var(--yellow-color);
         padding: u.rem(13.5) u.rem(17.5) u.rem(12.5);
@@ -51,11 +67,17 @@
       }
       text-align: center;
       font-size: g.$p-mobile-medium;
+
+      @include u.breakpoint-up(medium) {
+        width: u.rem(356);
+        height: u.rem(66);
+        font-size: g.$p-deskTop-medium;
+        padding: u.rem(21) u.rem(44);
+      }
     }
 
     .btn-share {
       @include u.button {
-        // width: u.rem(186);
         height: u.rem(40);
         background-color: var(--white-color);
         padding: u.rem(13.5) u.rem(17.5) u.rem(12.5);
@@ -64,6 +86,14 @@
       text-align: center;
       font-size: g.$p-mobile-medium;
       margin-left: u.rem(13);
+
+      @include u.breakpoint-up(medium) {
+        width: u.rem(191);
+        height: u.rem(66);
+        padding: u.rem(21) u.rem(44);
+        font-size: g.$p-deskTop-medium;
+        margin-left: u.rem(18);
+      }
     }
   }
 }

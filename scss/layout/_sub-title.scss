@@ -9,5 +9,11 @@
     font-weight: 700;
     line-height: u.rem(24);
     color: var(--yellow-color);
+
+    @include u.breakpoint-up(medium) {
+      margin: u.rem(46) 0 u.rem(78);
+      font-size: g.$p-deskTop-large;
+      line-height: u.rem(40);
+    }
   }
 }

@@ -9,18 +9,28 @@
 
   margin: u.rem(41) auto 0;
 
-  /* @include u.breakpoint-up(large) {
+  @include u.breakpoint-up(medium) {
     margin: u.rem(120) auto 0;
-  } */
+  }
 
   .clock {
     width: u.rem(125);
     height: u.rem(126);
+
+    @include u.breakpoint-up(medium) {
+      width: u.rem(261);
+      height: u.rem(265);
+    }
   }
 
   .title {
     position: absolute;
     width: u.rem(267);
     margin: u.rem(35) auto 0;
+
+    @include u.breakpoint-up(medium) {
+      width: u.rem(564);
+      margin: u.rem(74) auto 0;
+    }
   }
 }

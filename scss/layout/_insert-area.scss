@@ -7,16 +7,20 @@
   }
 
   .txt-wannabe,
-  txt-time {
+  .txt-time {
     font-family: var(--Gmarket-medium);
     font-size: g.$p-mobile-medium;
-    line-height: u.rem(14);
+    line-height: 1;
     font-weight: 400;
     text-align: center;
+
+    @include u.breakpoint-up(medium) {
+      font-size: g.$p-deskTop-medium;
+    }
   }
 
   .txt-wannabe {
-    margin-bottom: u.rem(17);
+    margin-bottom: u.rem(27);
   }
 
   .txt-time {
@@ -25,9 +29,18 @@
       justify-content: center;
       align-items: center;
       margin-bottom: u.rem(19);
+
+      @include u.breakpoint-up(medium) {
+        display: inline;
+        margin-bottom: 0;
+      }
     }
 
     margin-bottom: u.rem(49);
+
+    @include u.breakpoint-up(medium) {
+      margin-bottom: u.rem(115);
+    }
   }
 
   input {
@@ -37,13 +50,23 @@
     height: u.rem(37);
     margin: 0 u.rem(4);
 
+    @include u.breakpoint-up(medium) {
+      width: u.rem(228);
+      height: u.rem(57);
+      margin: 0 u.rem(17);
+    }
+
     &::placeholder {
       font-family: var(--Gmarket-medium);
       color: var(--lightGray-color);
       font-weight: 400;
       font-size: g.$p-mobile-medium;
-      line-height: u.rem(14);
+      line-height: 1;
       text-align: center;
+
+      @include u.breakpoint-up(medium) {
+        font-size: g.$p-deskTop-medium;
+      }
     }
   }
 
@@ -52,6 +75,10 @@
     justify-content: center;
     margin: 0 auto u.rem(64);
     position: relative;
+
+    @include u.breakpoint-up(medium) {
+      margin: 0 auto u.rem(115);
+    }
 
     .btn-calc {
       @include u.button {
@@ -63,6 +90,14 @@
         padding: u.rem(23) u.rem(49) u.rem(21);
         border-radius: u.rem(13);
       }
+
+      @include u.breakpoint-up(medium) {
+        width: u.rem(568);
+        height: u.rem(66);
+        font-size: g.$p-deskTop-medium;
+        padding: u.rem(21) u.rem(44);
+        border-radius: u.rem(56);
+      }
     }
 
     .click {
@@ -71,6 +106,13 @@
       right: u.rem(-46);
       width: u.rem(43);
       height: u.rem(48);
+
+      @include u.breakpoint-up(medium) {
+        top: u.rem(10);
+        right: u.rem(-67);
+        width: u.rem(64);
+        height: u.rem(72);
+      }
     }
   }
 }

@@ -8,10 +8,20 @@
   }
   padding: 0 0 u.rem(32);
 
+  @include u.breakpoint-up(medium) {
+    padding: 0 0 u.rem(70);
+  }
+
   .logo {
     width: u.rem(91);
     height: u.rem(18);
     margin-bottom: u.rem(17);
+
+    @include u.breakpoint-up(medium) {
+      width: u.rem(125);
+      height: u.rem(25);
+      margin-bottom: u.rem(20);
+    }
   }
 
   .txt-footer {
@@ -21,5 +31,10 @@
     line-height: u.rem(13);
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
+
+    @include u.breakpoint-up(medium) {
+      font-size: g.$p-deskTop-small;
+      line-height: u.rem(17);
+    }
   }
 }
