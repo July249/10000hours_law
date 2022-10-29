@@ -1,0 +1,26 @@
+@use '../util' as u;
+
+.header {
+  @include u.flex_column {
+    align-items: center;
+  }
+
+  position: relative;
+
+  margin: u.rem(41) auto 0;
+
+  /* @include u.breakpoint-up(large) {
+    margin: u.rem(120) auto 0;
+  } */
+
+  .clock {
+    width: u.rem(125);
+    height: u.rem(126);
+  }
+
+  .title {
+    position: absolute;
+    width: u.rem(267);
+    margin: u.rem(35) auto 0;
+  }
+}
