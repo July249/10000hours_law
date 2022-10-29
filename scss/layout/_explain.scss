@@ -1,0 +1,29 @@
+@use '../globals' as g;
+@use '../util' as u;
+
+.explain {
+  @include u.flex_column {
+    align-items: center;
+    text-align: center;
+  }
+  position: relative;
+  margin: 0 u.rem(35) u.rem(66);
+
+  .txt-explain {
+    font-family: var(--Gmarket-medium);
+    font-weight: 400;
+    font-size: g.$p-mobile-medium;
+    line-height: u.rem(26);
+    strong {
+      font-family: var(--Gmarket-bold);
+      font-weight: 700;
+      font-size: g.$p-mobile-medium;
+      line-height: u.rem(16);
+    }
+  }
+  .quotes {
+    position: absolute;
+    width: u.rem(302);
+    margin-top: u.rem(24);
+  }
+}
