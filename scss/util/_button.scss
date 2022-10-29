@@ -1,0 +1,14 @@
+@use 'functions' as f;
+
+@mixin button {
+  display: flex;
+  align-items: center;
+  gap: f.rem(10);
+  font-family: var(--Gmarket-bold);
+  font-size: f.rem(14);
+  color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 f.rem(10) rgba(0, 0, 0, 0.5);
+  @content;
+}
