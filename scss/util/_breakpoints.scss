@@ -2,8 +2,9 @@
 
 // apply styles over than "$breakpoints-up, $size"
 $breakpoints-up: (
-  'medium': f.em(768),
-  'large': f.em(1024),
+  'medium': f.rem(812),
+  'large': f.rem(1024),
+  'xlarge': f.rem(1440),
 );
 
 @mixin breakpoint-up($size) {
