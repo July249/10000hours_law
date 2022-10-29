@@ -1,0 +1,13 @@
+@use 'functions' as f;
+
+// apply styles over than "$breakpoints-up, $size"
+$breakpoints-up: (
+  'medium': f.em(768),
+  'large': f.em(1024),
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
