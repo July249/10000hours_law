@@ -1,0 +1,13 @@
+@use '../globals' as g;
+@use '../util' as u;
+
+.sub-title {
+  p {
+    margin: u.rem(31) 0 u.rem(62);
+    font-family: var(--OTE-Enjoy);
+    font-size: g.$p-mobile-large;
+    font-weight: 700;
+    line-height: u.rem(24);
+    color: var(--yellow-color);
+  }
+}
