@@ -1,5 +1,7 @@
 # 1만 시간의 법칙
 
+https://img.shields.io/badge/style-Sass-pink
+
 ## 프로젝트 소개
 
 "1만 시간의 법칙"은 어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
@@ -7,7 +9,6 @@
 "1만 시간의 법칙"에서 말하는 기준에 부합하는 전문가가 되기 위해서 하루에 몇 시간을 공부하면 될지, 몇 일이 소요될지 계산해주는 웹페이지 입니다.
 
 ![image](https://user-images.githubusercontent.com/90930391/198871992-a7eb023f-84ce-4fbb-b8b0-2cf487a1a7ca.png)
-
 
 ## 개발 기간
 
@@ -25,7 +26,6 @@
 
 ![image](https://user-images.githubusercontent.com/90930391/198872149-7c2ae2be-3d46-4d85-83e2-3c7df4d19bbb.png)
 
-
 2. "나는 며칠 동안 훈련을 해야 1만 시간이 될까?" 버튼을 클릭한다.
 
 ![image](https://user-images.githubusercontent.com/90930391/198872130-70a27fb9-0bca-4fab-9e57-96dd3d3c4f35.png)
@@ -42,4 +42,4 @@
 
 6. Modal 창 밖의 blur 처리된 공간을 클릭하면 Modal 창만 사라집니다.
 
-7. 
+7.
