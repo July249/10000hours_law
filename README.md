@@ -1,4 +1,4 @@
-# 1만 시간의 법칙 <img src="https://img.shields.io/badge/HTML5-red"> <img src="https://img.shields.io/badge/Sass-pink"> <img src="https://img.shields.io/badge/JavaScript-yellow">
+# 1만 시간의 법칙 <img src="https://img.shields.io/badge/HTML5-red"> <img src="https://img.shields.io/badge/Scss-pink"> <img src="https://img.shields.io/badge/JavaScript-yellow">
 
 ## 프로젝트 소개
 
