@@ -49,11 +49,14 @@
     width: u.rem(156);
     height: u.rem(37);
     margin: 0 u.rem(4);
+    font-family: var(--Gmarket-medium);
+    font-size: g.$p-mobile-medium;
 
     @include u.breakpoint-up(medium) {
       width: u.rem(228);
       height: u.rem(57);
       margin: 0 u.rem(17);
+      font-size: g.$p-deskTop-medium;
     }
 
     &::placeholder {
