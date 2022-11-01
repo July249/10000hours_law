@@ -71,6 +71,10 @@
         font-size: g.$p-deskTop-medium;
       }
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .btn-wrap {
