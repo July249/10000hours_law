@@ -1,40 +1,40 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
 
 .footer {
-  @include u.flex_column {
+  @include abstract.flex_column {
     justify-content: center;
     align-items: center;
   }
-  padding: 0 0 u.rem(32);
+  padding: 0 0 abstract.rem(32);
 
-  @include u.breakpoint-up(medium) {
-    padding: 0 0 u.rem(70);
+  @include abstract.breakpoint-up(medium) {
+    padding: 0 0 abstract.rem(70);
   }
 
   .logo {
-    width: u.rem(91);
-    height: u.rem(18);
-    margin-bottom: u.rem(17);
+    width: abstract.rem(91);
+    height: abstract.rem(18);
+    margin-bottom: abstract.rem(17);
 
-    @include u.breakpoint-up(medium) {
-      width: u.rem(125);
-      height: u.rem(25);
-      margin-bottom: u.rem(20);
+    @include abstract.breakpoint-up(medium) {
+      width: abstract.rem(125);
+      height: abstract.rem(25);
+      margin-bottom: abstract.rem(20);
     }
   }
 
   .txt-footer {
     font-family: var(--Noto-Sans);
-    font-size: g.$p-mobile-small;
+    font-size: base.$p-mobile-small;
     font-weight: 400;
-    line-height: u.rem(13);
+    line-height: abstract.rem(13);
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
 
-    @include u.breakpoint-up(medium) {
-      font-size: g.$p-deskTop-small;
-      line-height: u.rem(17);
+    @include abstract.breakpoint-up(medium) {
+      font-size: base.$p-deskTop-small;
+      line-height: abstract.rem(17);
     }
   }
 }

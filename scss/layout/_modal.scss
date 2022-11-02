@@ -1,5 +1,6 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
+@use '../components' as component;
 
 .modal-screen {
   visibility: hidden;
@@ -23,64 +24,64 @@
   justify-content: flex-start;
   align-items: center;
   margin: calc(100vh / 4) auto;
-  width: u.rem(330);
-  height: u.rem(500);
+  width: abstract.rem(330);
+  height: abstract.rem(500);
   background-color: var(--white-color);
   box-shadow: rgba(0, 0, 0, 0.5);
-  border-radius: u.rem(30);
+  border-radius: abstract.rem(30);
   color: var(--bg-color);
 
-  @include u.breakpoint-up(large) {
-    width: u.rem(600);
-    height: u.rem(600);
+  @include abstract.breakpoint-up(large) {
+    width: abstract.rem(600);
+    height: abstract.rem(600);
   }
 
-  @include u.breakpoint-up(xlarge) {
-    width: u.rem(800);
-    height: u.rem(800);
+  @include abstract.breakpoint-up(xlarge) {
+    width: abstract.rem(800);
+    height: abstract.rem(800);
   }
 
   .modal-wrap {
-    @include u.flex_column {
+    @include abstract.flex_column {
       align-items: center;
     }
-    width: u.rem(241);
-    flex-basis: u.rem(420);
-    margin: u.rem(40) u.rem(44);
+    width: abstract.rem(241);
+    flex-basis: abstract.rem(420);
+    margin: abstract.rem(40) abstract.rem(44);
 
-    @include u.breakpoint-up(large) {
-      width: u.rem(508);
-      flex-basis: u.rem(600);
-      margin: u.rem(76) auto u.rem(68);
+    @include abstract.breakpoint-up(large) {
+      width: abstract.rem(508);
+      flex-basis: abstract.rem(600);
+      margin: abstract.rem(76) auto abstract.rem(68);
     }
 
     .txt-cheer {
       text-align: center;
       font-family: var(--OTE-Enjoy);
       font-weight: 700;
-      font-size: u.rem(36);
-      line-height: u.rem(40);
+      font-size: abstract.rem(36);
+      line-height: abstract.rem(40);
 
       strong {
-        margin-top: u.rem(40);
-        font-size: u.rem(64);
-        line-height: u.rem(70);
+        margin-top: abstract.rem(40);
+        font-size: abstract.rem(64);
+        line-height: abstract.rem(70);
 
-        @include u.breakpoint-up(large) {
+        @include abstract.breakpoint-up(large) {
           margin-top: 0;
-          font-size: u.rem(72);
-          line-height: u.rem(80);
+          font-size: abstract.rem(72);
+          line-height: abstract.rem(80);
         }
 
-        @include u.breakpoint-up(xlarge) {
-          font-size: u.rem(96);
-          line-height: u.rem(106);
+        @include abstract.breakpoint-up(xlarge) {
+          font-size: abstract.rem(96);
+          line-height: abstract.rem(106);
         }
 
         span {
           display: none;
 
-          @include u.breakpoint-up(large) {
+          @include abstract.breakpoint-up(large) {
             display: inline;
           }
         }
@@ -88,39 +89,39 @@
     }
 
     .licat-img {
-      width: u.rem(250);
-      margin-bottom: u.rem(46);
+      width: abstract.rem(250);
+      margin-bottom: abstract.rem(46);
 
-      @include u.breakpoint-up(large) {
-        width: u.rem(340);
-        margin-bottom: u.rem(44);
+      @include abstract.breakpoint-up(large) {
+        width: abstract.rem(340);
+        margin-bottom: abstract.rem(44);
       }
 
-      @include u.breakpoint-up(xlarge) {
-        width: u.rem(433);
-        margin-bottom: u.rem(74);
+      @include abstract.breakpoint-up(xlarge) {
+        width: abstract.rem(433);
+        margin-bottom: abstract.rem(74);
       }
     }
     .btn-close {
-      @include u.button {
+      @include component.button {
         flex-direction: row;
-        width: u.rem(241);
-        height: u.rem(68);
+        width: abstract.rem(241);
+        height: abstract.rem(68);
         text-align: center;
         background-color: var(--yellow-color);
-        padding: u.rem(19) u.rem(30) u.rem(17);
-        border-radius: u.rem(13);
+        padding: abstract.rem(19) abstract.rem(30) abstract.rem(17);
+        border-radius: abstract.rem(13);
       }
 
-      @include u.breakpoint-up(large) {
-        width: u.rem(508);
-        padding: u.rem(21) u.rem(45);
-        border-radius: u.rem(56);
-        font-size: g.$p-deskTop-medium;
+      @include abstract.breakpoint-up(large) {
+        width: abstract.rem(508);
+        padding: abstract.rem(21) abstract.rem(45);
+        border-radius: abstract.rem(56);
+        font-size: base.$p-deskTop-medium;
       }
 
-      @include u.breakpoint-up(xlarge) {
-        width: u.rem(508);
+      @include abstract.breakpoint-up(xlarge) {
+        width: abstract.rem(508);
       }
     }
   }

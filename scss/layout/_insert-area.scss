@@ -1,26 +1,27 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
+@use '../components' as component;
 
 .insert-form {
-  @include u.flex_column {
+  @include abstract.flex_column {
     align-items: center;
   }
 
   .txt-wannabe,
   .txt-time {
     font-family: var(--Gmarket-medium);
-    font-size: g.$p-mobile-medium;
+    font-size: base.$p-mobile-medium;
     line-height: 1;
     font-weight: 400;
     text-align: center;
 
-    @include u.breakpoint-up(medium) {
-      font-size: g.$p-deskTop-medium;
+    @include abstract.breakpoint-up(medium) {
+      font-size: base.$p-deskTop-medium;
     }
   }
 
   .txt-wannabe {
-    margin-bottom: u.rem(27);
+    margin-bottom: abstract.rem(27);
   }
 
   .txt-time {
@@ -28,47 +29,47 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: u.rem(19);
+      margin-bottom: abstract.rem(19);
 
-      @include u.breakpoint-up(medium) {
+      @include abstract.breakpoint-up(medium) {
         display: inline;
         margin-bottom: 0;
       }
     }
 
-    margin-bottom: u.rem(49);
+    margin-bottom: abstract.rem(49);
 
-    @include u.breakpoint-up(medium) {
-      margin-bottom: u.rem(115);
+    @include abstract.breakpoint-up(medium) {
+      margin-bottom: abstract.rem(115);
     }
   }
 
   input {
     border: none;
-    border-radius: u.rem(7);
-    width: u.rem(156);
-    height: u.rem(37);
-    margin: 0 u.rem(4);
+    border-radius: abstract.rem(7);
+    width: abstract.rem(156);
+    height: abstract.rem(37);
+    margin: 0 abstract.rem(4);
     font-family: var(--Gmarket-medium);
-    font-size: g.$p-mobile-medium;
+    font-size: base.$p-mobile-medium;
 
-    @include u.breakpoint-up(medium) {
-      width: u.rem(228);
-      height: u.rem(57);
-      margin: 0 u.rem(17);
-      font-size: g.$p-deskTop-medium;
+    @include abstract.breakpoint-up(medium) {
+      width: abstract.rem(228);
+      height: abstract.rem(57);
+      margin: 0 abstract.rem(17);
+      font-size: base.$p-deskTop-medium;
     }
 
     &::placeholder {
       font-family: var(--Gmarket-medium);
       color: var(--lightGray-color);
       font-weight: 400;
-      font-size: g.$p-mobile-medium;
+      font-size: base.$p-mobile-medium;
       line-height: 1;
       text-align: center;
 
-      @include u.breakpoint-up(medium) {
-        font-size: g.$p-deskTop-medium;
+      @include abstract.breakpoint-up(medium) {
+        font-size: base.$p-deskTop-medium;
       }
     }
 
@@ -80,45 +81,45 @@
   .btn-wrap {
     display: flex;
     justify-content: center;
-    margin: 0 auto u.rem(64);
+    margin: 0 auto abstract.rem(64);
     position: relative;
 
-    @include u.breakpoint-up(medium) {
-      margin: 0 auto u.rem(115);
+    @include abstract.breakpoint-up(medium) {
+      margin: 0 auto abstract.rem(115);
     }
 
     .btn-calc {
-      @include u.button {
+      @include component.button {
         flex-direction: row;
-        width: u.rem(241);
-        height: u.rem(68);
+        width: abstract.rem(241);
+        height: abstract.rem(68);
         text-align: center;
         background-color: var(--yellow-color);
-        padding: u.rem(23) u.rem(49) u.rem(21);
-        border-radius: u.rem(13);
+        padding: abstract.rem(23) abstract.rem(49) abstract.rem(21);
+        border-radius: abstract.rem(13);
       }
 
-      @include u.breakpoint-up(medium) {
-        width: u.rem(568);
-        height: u.rem(66);
-        font-size: g.$p-deskTop-medium;
-        padding: u.rem(21) u.rem(44);
-        border-radius: u.rem(56);
+      @include abstract.breakpoint-up(medium) {
+        width: abstract.rem(568);
+        height: abstract.rem(66);
+        font-size: base.$p-deskTop-medium;
+        padding: abstract.rem(21) abstract.rem(44);
+        border-radius: abstract.rem(56);
       }
     }
 
     .click {
       position: absolute;
-      top: u.rem(32);
-      right: u.rem(-46);
-      width: u.rem(43);
-      height: u.rem(48);
+      top: abstract.rem(32);
+      right: abstract.rem(-46);
+      width: abstract.rem(43);
+      height: abstract.rem(48);
 
-      @include u.breakpoint-up(medium) {
-        top: u.rem(10);
-        right: u.rem(-67);
-        width: u.rem(64);
-        height: u.rem(72);
+      @include abstract.breakpoint-up(medium) {
+        top: abstract.rem(10);
+        right: abstract.rem(-67);
+        width: abstract.rem(64);
+        height: abstract.rem(72);
       }
     }
   }

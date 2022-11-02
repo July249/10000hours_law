@@ -1,98 +1,99 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
+@use '../components' as component;
 
 .result-sec {
-  @include u.flex_column;
+  @include abstract.flex_column;
   display: none;
 
   .result-area {
     .txt-wannabe,
     .txt-time {
-      @include u.flex_row {
+      @include abstract.flex_row {
         justify-content: center;
         align-items: center;
       }
       font-family: var(--Gmarket-medium);
-      font-size: g.$p-mobile-medium;
+      font-size: base.$p-mobile-medium;
       line-height: 1;
       font-weight: 400;
 
-      @include u.breakpoint-up(medium) {
-        font-size: g.$p-deskTop-medium;
+      @include abstract.breakpoint-up(medium) {
+        font-size: base.$p-deskTop-medium;
       }
 
       strong {
         font-family: var(--Gmarket-bold);
         font-weight: 700;
-        font-size: g.$p-mobile-xlarge;
+        font-size: base.$p-mobile-xlarge;
         flex-grow: 0;
-        margin: 0 u.rem(8);
+        margin: 0 abstract.rem(8);
 
-        @include u.breakpoint-up(medium) {
-          font-size: g.$p-deskTop-xlarge;
-          margin: 0 u.rem(12);
+        @include abstract.breakpoint-up(medium) {
+          font-size: base.$p-deskTop-xlarge;
+          margin: 0 abstract.rem(12);
         }
       }
     }
 
     .txt-wannabe {
-      margin-bottom: u.rem(17);
+      margin-bottom: abstract.rem(17);
     }
 
     .txt-time {
-      margin-bottom: u.rem(55);
+      margin-bottom: abstract.rem(55);
 
-      @include u.breakpoint-up(medium) {
-        margin-bottom: u.rem(127);
+      @include abstract.breakpoint-up(medium) {
+        margin-bottom: abstract.rem(127);
       }
     }
   }
 
   .btns {
-    @include u.flex_row {
+    @include abstract.flex_row {
       justify-content: center;
     }
-    margin: 0 u.rem(31) u.rem(83);
+    margin: 0 abstract.rem(31) abstract.rem(83);
 
-    @include u.breakpoint-up(medium) {
-      margin: 0 auto u.rem(130);
+    @include abstract.breakpoint-up(medium) {
+      margin: 0 auto abstract.rem(130);
     }
 
     .btn-go {
-      @include u.button {
-        height: u.rem(40);
+      @include component.button {
+        height: abstract.rem(40);
         background-color: var(--yellow-color);
-        padding: u.rem(13.5) u.rem(17.5) u.rem(12.5);
-        border-radius: u.rem(56);
+        padding: abstract.rem(13.5) abstract.rem(17.5) abstract.rem(12.5);
+        border-radius: abstract.rem(56);
       }
       text-align: center;
-      font-size: g.$p-mobile-medium;
+      font-size: base.$p-mobile-medium;
 
-      @include u.breakpoint-up(medium) {
-        width: u.rem(356);
-        height: u.rem(66);
-        font-size: g.$p-deskTop-medium;
-        padding: u.rem(21) u.rem(44);
+      @include abstract.breakpoint-up(medium) {
+        width: abstract.rem(356);
+        height: abstract.rem(66);
+        font-size: base.$p-deskTop-medium;
+        padding: abstract.rem(21) abstract.rem(44);
       }
     }
 
     .btn-share {
-      @include u.button {
-        height: u.rem(40);
+      @include component.button {
+        height: abstract.rem(40);
         background-color: var(--white-color);
-        padding: u.rem(13.5) u.rem(17.5) u.rem(12.5);
-        border-radius: u.rem(56);
+        padding: abstract.rem(13.5) abstract.rem(17.5) abstract.rem(12.5);
+        border-radius: abstract.rem(56);
       }
       text-align: center;
-      font-size: g.$p-mobile-medium;
-      margin-left: u.rem(13);
+      font-size: base.$p-mobile-medium;
+      margin-left: abstract.rem(13);
 
-      @include u.breakpoint-up(medium) {
-        width: u.rem(191);
-        height: u.rem(66);
-        padding: u.rem(21) u.rem(44);
-        font-size: g.$p-deskTop-medium;
-        margin-left: u.rem(18);
+      @include abstract.breakpoint-up(medium) {
+        width: abstract.rem(191);
+        height: abstract.rem(66);
+        padding: abstract.rem(21) abstract.rem(44);
+        font-size: base.$p-deskTop-medium;
+        margin-left: abstract.rem(18);
       }
     }
   }

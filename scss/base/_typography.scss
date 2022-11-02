@@ -1,0 +1,11 @@
+@use '../abstracts' as abstract;
+
+$p-mobile-small: abstract.rem(9);
+$p-mobile-medium: abstract.rem(14);
+$p-mobile-large: abstract.rem(22);
+$p-mobile-xlarge: abstract.rem(24);
+
+$p-deskTop-small: abstract.rem(12);
+$p-deskTop-medium: abstract.rem(24);
+$p-deskTop-large: abstract.rem(36);
+$p-deskTop-xlarge: abstract.rem(72);

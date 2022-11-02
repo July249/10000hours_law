@@ -1,49 +1,49 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
 
 .explain {
-  @include u.flex_column {
+  @include abstract.flex_column {
     align-items: center;
     text-align: center;
   }
   position: relative;
-  margin: 0 u.rem(35) u.rem(66);
+  margin: 0 abstract.rem(35) abstract.rem(66);
 
-  @include u.breakpoint-up(medium) {
-    margin: 0 u.rem(60) u.rem(102);
+  @include abstract.breakpoint-up(medium) {
+    margin: 0 abstract.rem(60) abstract.rem(102);
   }
 
   .txt-explain {
     font-family: var(--Gmarket-medium);
     font-weight: 400;
-    font-size: g.$p-mobile-medium;
-    line-height: u.rem(26);
+    font-size: base.$p-mobile-medium;
+    line-height: abstract.rem(26);
 
-    @include u.breakpoint-up(medium) {
-      font-size: u.rem(18);
-      line-height: u.rem(28);
+    @include abstract.breakpoint-up(medium) {
+      font-size: abstract.rem(18);
+      line-height: abstract.rem(28);
     }
 
     strong {
       font-family: var(--Gmarket-bold);
       font-weight: 700;
-      font-size: g.$p-mobile-medium;
-      line-height: u.rem(16);
+      font-size: base.$p-mobile-medium;
+      line-height: abstract.rem(16);
 
-      @include u.breakpoint-up(medium) {
-        font-size: g.$p-deskTop-medium;
+      @include abstract.breakpoint-up(medium) {
+        font-size: base.$p-deskTop-medium;
         line-height: 1;
       }
     }
   }
   .quotes {
     position: absolute;
-    width: u.rem(302);
-    margin-top: u.rem(24);
+    width: abstract.rem(302);
+    margin-top: abstract.rem(24);
 
-    @include u.breakpoint-up(medium) {
-      width: u.rem(494);
-      margin-top: u.rem(13);
+    @include abstract.breakpoint-up(medium) {
+      width: abstract.rem(494);
+      margin-top: abstract.rem(13);
     }
   }
 }

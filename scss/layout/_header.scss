@@ -1,36 +1,36 @@
-@use '../util' as u;
+@use '../abstracts' as abstract;
 
 .header {
-  @include u.flex_column {
+  @include abstract.flex_column {
     align-items: center;
   }
 
   position: relative;
 
-  margin: u.rem(41) auto 0;
+  margin: abstract.rem(41) auto 0;
 
-  @include u.breakpoint-up(medium) {
-    margin: u.rem(120) auto 0;
+  @include abstract.breakpoint-up(medium) {
+    margin: abstract.rem(120) auto 0;
   }
 
   .clock {
-    width: u.rem(125);
-    height: u.rem(126);
+    width: abstract.rem(125);
+    height: abstract.rem(126);
 
-    @include u.breakpoint-up(medium) {
-      width: u.rem(261);
-      height: u.rem(265);
+    @include abstract.breakpoint-up(medium) {
+      width: abstract.rem(261);
+      height: abstract.rem(265);
     }
   }
 
   .title {
     position: absolute;
-    width: u.rem(267);
-    margin: u.rem(35) auto 0;
+    width: abstract.rem(267);
+    margin: abstract.rem(35) auto 0;
 
-    @include u.breakpoint-up(medium) {
-      width: u.rem(564);
-      margin: u.rem(74) auto 0;
+    @include abstract.breakpoint-up(medium) {
+      width: abstract.rem(564);
+      margin: abstract.rem(74) auto 0;
     }
   }
 }

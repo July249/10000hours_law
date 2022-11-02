@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use '../abstracts' as abstract;
 
 *,
 *::before,
@@ -22,7 +22,7 @@ body {
 
 #app {
   width: 100%;
-  @include u.flex_column {
+  @include abstract.flex_column {
     align-items: center;
   }
 }

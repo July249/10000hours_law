@@ -1,19 +1,19 @@
-@use '../globals' as g;
-@use '../util' as u;
+@use '../base' as base;
+@use '../abstracts' as abstract;
 
 .sub-title {
   p {
-    margin: u.rem(31) 0 u.rem(62);
+    margin: abstract.rem(31) 0 abstract.rem(62);
     font-family: var(--OTE-Enjoy);
-    font-size: g.$p-mobile-large;
+    font-size: base.$p-mobile-large;
     font-weight: 700;
-    line-height: u.rem(24);
+    line-height: abstract.rem(24);
     color: var(--yellow-color);
 
-    @include u.breakpoint-up(medium) {
-      margin: u.rem(46) 0 u.rem(78);
-      font-size: g.$p-deskTop-large;
-      line-height: u.rem(40);
+    @include abstract.breakpoint-up(medium) {
+      margin: abstract.rem(46) 0 abstract.rem(78);
+      font-size: base.$p-deskTop-large;
+      line-height: abstract.rem(40);
     }
   }
 }

@@ -1,10 +1,10 @@
-@use 'functions' as f;
+@use 'functions' as func;
 
 // apply styles over than "$breakpoints-up, $size"
 $breakpoints-up: (
-  'medium': f.rem(812),
-  'large': f.rem(1024),
-  'xlarge': f.rem(1440),
+  'medium': func.rem(812),
+  'large': func.rem(1024),
+  'xlarge': func.rem(1440),
 );
 
 @mixin breakpoint-up($size) {
