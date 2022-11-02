@@ -1,4 +1,8 @@
-# 1만 시간의 법칙 <img src="https://img.shields.io/badge/HTML5-red"> <img src="https://img.shields.io/badge/Scss-pink"> <img src="https://img.shields.io/badge/JavaScript-yellow">
+# [1만 시간의 법칙](https://july249.github.io/10000hours_law/) <img src="https://img.shields.io/badge/HTML5-red"> <img src="https://img.shields.io/badge/Scss-pink"> <img src="https://img.shields.io/badge/JavaScript-yellow">
+
+## 프로젝트 살펴보기
+
+Link: https://july249.github.io/10000hours_law/
 
 ## 프로젝트 소개
 
@@ -6,7 +10,7 @@
 
 "1만 시간의 법칙"에서 말하는 기준에 부합하는 전문가가 되기 위해서 하루에 몇 시간을 공부하면 될지, 몇 일이 소요될지 계산해주는 웹페이지 입니다.
 
-![image](https://user-images.githubusercontent.com/90930391/198871992-a7eb023f-84ce-4fbb-b8b0-2cf487a1a7ca.png)
+![image](https://user-images.githubusercontent.com/90930391/199500638-28f45e35-157e-4970-8ef2-6e8b841c690b.png)
 
 ## 개발 기간
 
@@ -22,7 +26,7 @@
 
 1. 되고 싶은 전문 분야와 하루 공부 시간을 입력란에 작성합니다.
 
-![image](https://user-images.githubusercontent.com/90930391/198872149-7c2ae2be-3d46-4d85-83e2-3c7df4d19bbb.png)
+![image](https://user-images.githubusercontent.com/90930391/199500780-b9953832-8f5d-4eb9-92f5-1aefadb0c3d4.png)
 
 - 전문 분야를 입력시 "한글, 영문, 숫자"만이 허용됩니다.
 
@@ -30,7 +34,10 @@
 
 - 위 허용 사항을 지키지 않은 입력 내용에 대해서는 입력창의 경계를 빨간색으로 표시하여 사용자에게 입력내용에 문제가 있음을 알려줍니다.
 
-2. "나는 며칠 동안 훈련을 해야 1만 시간이 될까?" 버튼을 클릭한다.
+![image](https://user-images.githubusercontent.com/90930391/199501087-a7fc3ad3-a539-463f-8cf9-8d0cac23d531.png)
+
+
+2. "나는 며칠 동안 훈련을 해야 1만 시간이 될까?" 버튼을 클릭합니다.
 
 ![image](https://user-images.githubusercontent.com/90930391/198872130-70a27fb9-0bca-4fab-9e57-96dd3d3c4f35.png)
 
@@ -42,7 +49,7 @@
 
 4. "훈련하러 가기 GO!GO!"를 클릭하면 Modal 창이 나타납니다.
 
-![image](https://user-images.githubusercontent.com/90930391/198872250-e93269f7-5e8c-4f90-ac5b-add856a46c4f.png)
+![image](https://user-images.githubusercontent.com/90930391/199501441-f8d289e0-7897-47af-9399-76bb4261f3eb.png)
 
 5. "종료하고 진짜 운련하러 가기 GO!GO!" 버튼을 클릭하면 Modal창이 닫히고, 브라우저의 새 창에 인프런 강좌(https://www.inflearn.com/course/1%EB%A7%8C%EC%8B%9C%EA%B0%84-%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%9C%EC%9E%91) 가 연결됩니다.
 
